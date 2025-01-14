@@ -11,6 +11,7 @@ def get_requirements(filepath:str) -> List:
         requirements=filestream.readlines()
         # Remove endlines from .txt file
         [req.replace("\n","") for req in requirements]
+        #TODO: Remove this condition when ready to build
         if REQ_BUILD_FLAG in requirements:
             requirements.remove(REQ_BUILD_FLAG)
     return requirements
