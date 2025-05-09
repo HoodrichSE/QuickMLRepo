@@ -50,7 +50,7 @@ class ModelTrainer:
                 "CatboostingClassifier": CatBoostRegressor(),
                 "Adaboost Classifier": AdaBoostRegressor()
             }
-
+            # TODO: Add a hyperparameters config that can be passed to utils.evaluate_models here
         
             model_report:dict = evaluate_models(
                 x_train = x_train,
