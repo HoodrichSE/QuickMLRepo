@@ -12,9 +12,11 @@ build/
 develop-eggs/
 dist/
 downloads/
+templates/
 eggs/
 .eggs/
 lib/
+logs/
 lib64/
 parts/
 sdist/
@@ -123,7 +125,9 @@ celerybeat.pid
 
 # Data
 .artifacts/
+artifacts/
 .notebook/data/
+notebook/data/
 
 # Environments
 .env
@@ -143,6 +147,8 @@ venv.bak/
 
 # Catboost
 .notebook/catboost_info/
+notebook/catboost_info/
+catboost_info/
 
 # mkdocs documentation
 /site
