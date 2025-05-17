@@ -8,7 +8,7 @@ from src.pipeline.prediction_pipeline import CustomData, PredictionPipeline
 from src.logger import logging
 
 
-application = Flask(__name__) # Application entry point
+application = Flask(__name__) # Application entry point; must match EB's python.config
 
 app = application
 
