@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9  # or whatever version you're using
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo "Build completed"
+artifacts:
+  files:
+    - '**/*'
