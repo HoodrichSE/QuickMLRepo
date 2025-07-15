@@ -2,8 +2,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.9  # or whatever version you're using
+      python: 3.12
     commands:
+      - echo "Installing dependencies..."
       - pip install -r requirements.txt
   build:
     commands:
@@ -11,3 +12,4 @@ phases:
 artifacts:
   files:
     - '**/*'
+  name: sp-app-$(date +%Y-%m-%d)
