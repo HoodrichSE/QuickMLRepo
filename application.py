@@ -13,15 +13,13 @@ from src.logger import logging
 
 application = Flask(__name__) # Application entry point; must match EB's python.config
 
-app = application
-
 # Homepage route
-@app.route('/')
+@application.route('/')
 def index():
     return render_template('index.html')
 
 # Prediction call
-@app.route('/predictdata', methods = ['GET', 'POST'])
+@application.route('/predictdata', methods = ['GET', 'POST'])
 def predict_datapoint():
     if request.method == 'GET':
         return render_template('home.html')
@@ -51,4 +49,4 @@ def predict_datapoint():
 
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", debug = False)
+    application.run(host = "0.0.0.0", debug = False)
