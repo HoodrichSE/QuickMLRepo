@@ -1,6 +1,8 @@
 # Copied from app.py, except without debug mode enabled
 # TODO: Find another way to deploy to AWS
 
+import os
+
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
@@ -49,4 +51,4 @@ def predict_datapoint():
 
 
 if __name__ == "__main__":
-    application.run(host = "0.0.0.0", debug = False)
+    application.run(host = "0.0.0.0", port=int(os.environ.get('PORT', 8000)), debug = False)
