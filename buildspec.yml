@@ -1,3 +1,5 @@
+# Modifies CodeBuild stage
+
 version: 0.2
 phases:
   install:
