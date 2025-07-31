@@ -1,4 +1,3 @@
---report /var/tmp/piplog
 --no-cache-dir
 pandas
 tensorflow
