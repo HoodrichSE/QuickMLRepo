@@ -1,5 +1,5 @@
 -vvv
---cache-dir /var/tmp
+--no-cache-dir
 pandas
 tensorflow
 numpy
