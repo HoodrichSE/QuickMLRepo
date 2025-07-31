@@ -1,3 +1,5 @@
+-vvv
+--cache-dir /var/tmp
 pandas
 tensorflow
 numpy
