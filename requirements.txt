@@ -1,6 +1,6 @@
---no-cache-dir
+
 pandas
-tensorflow
+--no-cache-dir tensorflow
 numpy
 seaborn
 matplotlib
